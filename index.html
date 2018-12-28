@@ -156,14 +156,29 @@
 				</section>
 
 
-				<section style="text-align: left;">
-					<h1>Let's do some magic</h1>
-					<p>
-						- <a href="https://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+					<section data-markdown>
+						<script type="text/template">
+						<!-- .slide: data-background="#ffffff" -->
+							mkdir drupal
+							cd drupal
+							curl -sSL https://www.drupal.org/download-latest/tar.gz | tar -xz --strip-components=1
+							php core/scripts/drupal quick-start standard
+						</script>
+					</section>
+				<!-- </section> -->
 
+				<section>
+					<h2> Let's do some magic </h2>
+					<p>For Mac & Linux</p>
+					<pre><code data-trim data-noescape>
+						$ mkdir drupal
+						$ cd drupal
+						$ curl -sSL https://www.drupal.org/download-latest/tar.gz | tar -xz --strip-components=1
+						$ php core/scripts/drupal quick-start standard
+					</code></pre>
+					<p>For Windows</p>
+					<small>Manually download the <a href="https://www.drupal.org/download-latest/zip">zip file for the latest recommended version of Drupal</a> and decompress it. cd into the into the resultant directory on the command line.</small>
+				</section>
 			</div>
 
 		</div>
